@@ -2,7 +2,6 @@ package com.edigest.journalApp.service;
 
 import com.edigest.journalApp.entity.User;
 import com.edigest.journalApp.repository.UserRepository;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -24,9 +23,9 @@ public class UserServiceTests {
     @Autowired
     private UserService userService;
 
-    @BeforeAll
+    @BeforeEach
     void setUp(){
-
+        // move instance-setup here; runs before each test
     }
 
     @ParameterizedTest
